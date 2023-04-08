@@ -2,9 +2,9 @@ import React from 'react'
 import Option from './Option';
 
 const Home = () => {
-    const question1 = ['Bus','Metro','Own Two - Wheeler','Own Car','Walk / Bicycle','Auto','App based ride hailing cab services including Ola / Uber'];
-    const question2 = ['< 5 km','5 - 10 km','10 - 15 km','15 - 20 km','20 - 25 km','> 25 km'];
-    
+    const question1 = ['Bus', 'Metro', 'Own Two - Wheeler', 'Own Car', 'Walk / Bicycle', 'Auto', 'App based ride hailing cab services including Ola / Uber'];
+    const question2 = ['< 5 km', '5 - 10 km', '10 - 15 km', '15 - 20 km', '20 - 25 km', '> 25 km'];
+    //checking that commit is working or not
     return (
         <div>
             <form >
@@ -13,7 +13,7 @@ const Home = () => {
                         <label>What is your most frequently used means of travel from your home to work location?</label>
                         <ul type='none'>
                             <li>
-                            {question1.map((data)=>(<Option data={data} name={1}/>)) }
+                                {question1.map((data) => (<Option data={data} name={1} />))}
                             </li>
                         </ul>
                     </li>
@@ -21,7 +21,7 @@ const Home = () => {
                         <label>What is the total distance between your home and workplace?</label>
                         <ul type='none'>
                             <li>
-                                {question2.map((data)=>(<Option data={data} name={2} />)) }
+                                {question2.map((data) => (<Option data={data} name={2} />))}
                             </li>
                         </ul>
                     </li>
